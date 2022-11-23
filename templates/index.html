@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HoloLive</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<header class="main-header">
+    <div class="container">
+        <h1><a href="#">HoloLive</a></h1>
+        <nav>
+            <ul class="main-menu">
+                <li><a href="https://twitter.com/ourokronii">Ouro Kronii</a></li>
+                <li><a href="https://twitter.com/ninomaeinanis">Ninomae Ina'nis</a></li>
+                <li><a href="https://twitter.com/nanashimumei_en">Nanashi Mumei</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<body>
+    <div class="big_bg big_bg_1">
+        <div class="filiter">
+            <div class="home-content wrapper">
+                <h2 class="page-title">My favorite HoloLive VTuber</h2>
+                <h2>my top 3 favorite VTuber</h2>
+            </div>
+        </div>
+    </div>
+    <div class="big_bg big_bg_2">
+        <div class="content right">
+            <div class="filiter">
+                <div class="text">
+                    <h4 class="vtuber-name">Ouro Kronii</h4>
+                    <p>2021年8月23日在Youtube開始活動的女性虛擬Youtuber，hololive English的HoloCouncil所屬，通稱Kronii。
+                        設定上「議會」的一員，是諸神的第三個創造「時間」概念的典獄長。
+                        這是被人類所曲解最嚴重的概念。沒有人類能逃離「時間」的束縛，而事實上大多數人類也不想從她的囚禁中解脫出來。她會下意識地抄起刀刃，本人還為此感到沾沾自喜。
+                        「時間」本來是作為一個齒輪的存在，用以連結其他的概念。但直到人類將日出日落賦予了意義，將「時間」這個想法套用上去，自此以後人類成為了時間的奴隸，而她則成為了一個將人類關在時間牢籠裡的獄卒。雖然說她安靜冷漠的性格多年來從未改變，但現在似乎變得更加驕傲且帶有虐待傾向的典獄長。</p>
+                </div>
+                <a href="https://www.youtube.com/c/OuroKroniiCh"><button class="button">Follow
+                    Channel</button></a>
+            </div>
+        </div>
+    </div>
+    <div class="big_bg big_bg_3">
+        <div class="content left">
+            <div class="filiter">
+                <div class="text">
+                    <h4 class="vtuber-name">Ninomae Ina'nis</h4>
+                    <p>於台灣時間2020年9月13日開始在英語圈活動的女性虛擬YouTtuber，為hololive EN[4]一期生。
+                        設定上是貨真價實的古神的祭司。某日撿到了一本“奇怪的書”後獲得了操控觸手的能力。對其本人而言觸手只是日常生活的一部分。不過，少女心的她連觸手都想給它打扮打扮。自從獲得這個力量以來，就有遠古之聲給她傳來低語和天啟，純潔而又平凡的她似乎正通過虛擬主播活動削減人們的SAN值。</p>
+                </div>
+                <a href="https://www.youtube.com/channel/UCMwGHR0BTZuLsmjY_NT5Pwg"><button class="button">Follow
+                        Channel</button></a>
+            </div>
+        </div>
+    </div>
+    <a href="https://www.youtube.com/channel/UC3n5uGu18FoCy23ggWWp8tA">
+        <div class="big_bg_4">
+            <img src="/static/images/donate.jpg" style="visibility: hidden;" />
+        </div>
+    </a>
+    <div class="form">
+        <div class="grid">
+            <h1 class="md_title">聯絡我們</h1>
+            <form class="grid" action="/" method="post">
+                <div><input class="input_text" type="text" name="name" placeholder="您的姓名" /></div>
+                <div><input class="input_text" type="text" name="email" placeholder="您的信箱" /></div>
+                <div><input class="input_text" type="text" name="message" placeholder="您的訊息" /></div>
+                <input class="button" type="submit" value="送出" />
+            </form>
+        </div>
+    </div>
+    <div class="flex mt-20"  style="background-color:#EAEDED;">
+        <div class="center flex w-100p">
+            <div class="w-100p m-30 ml-60">
+                <span class="foot_title">ABOUT VTubers</span>
+                <p>
+                    總部:HoloLive Cover<br>
+                    地址:日本東京都板橋區加賀１丁目６−1（COVER）<br>
+                    COVER網站:cover-corp.com<br>
+                    hololive網站:hololive.hololivepro.com<br>
+                    holostars網站:www.holostars.tv<br>
+                    旗下團體:hololive, INNK Music, holostars, hololive中国<br>
+                            hololive Indonesia, hololive English, holostars English.
+                </p>
+            </div>
+            <div class="w-100p m-30 ml-60">
+                <span class="foot_title">SOCIAL</span>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td><span class="link">HoloLive</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="border-bottom: 1px solid #d5d5e0;width:200px;"></td>
+                        </tr>
+                        <tr>
+                            <td style="padding-top:20px;"><img src="/static/images/all_holo.jpg" width="300px;"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    {% if data != undefined %}
+        {% if data == True %}
+            <script>alert("送出成功!")</script>     <!--警告視窗-->
+        {% else %}
+            <script>alert("送出失敗!")</script>     <!--警告視窗-->
+        {% endif %}
+    {% endif %}
+</body>
+
+</html>
